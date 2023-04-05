@@ -2,7 +2,6 @@
 
 import 'dart:math';
 
-import 'package:black_jack_ui/suits.dart';
 import 'package:flutter/material.dart';
 
 class CardTemplate extends StatelessWidget {
@@ -30,8 +29,10 @@ class CardTemplate extends StatelessWidget {
                   children: [
                     Text(
                       number.toString(),
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: color),
                     ),
                   ],
                 ),
@@ -43,7 +44,9 @@ class CardTemplate extends StatelessWidget {
                       Text(
                         number.toString(),
                         style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.bold),
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: color),
                       ),
                     ],
                   ),
