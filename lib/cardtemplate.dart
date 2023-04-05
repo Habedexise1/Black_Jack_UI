@@ -18,8 +18,11 @@ class CardTemplate extends StatelessWidget {
           color: Colors.white,
           height: 150,
           width: 100,
-          child: Center(
-            child: Text(""),
+          child: const Center(
+            child: Text(
+              "🖤",
+              style: TextStyle(fontSize: 30),
+            ),
           ),
         ),
       ),
