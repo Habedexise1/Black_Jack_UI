@@ -2,6 +2,7 @@
 
 import 'package:black_jack_ui/card.dart';
 import 'package:black_jack_ui/cardtemplate.dart';
+import 'package:black_jack_ui/suits.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,17 +24,33 @@ class _HomePageState extends State<HomePage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  CardTemplate(),
-                  CardTemplate(),
+                children: [
+                  CardTemplate(
+                    color: Colors.red,
+                    number: 10,
+                    suit: clover(),
+                  ),
+                  CardTemplate(
+                    color: Colors.red,
+                    number: 10,
+                    suit: clover(),
+                  ),
                 ],
               ),
               CardBack(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  CardTemplate(),
-                  CardTemplate(),
+                children: [
+                  CardTemplate(
+                    color: Colors.red,
+                    number: 10,
+                    suit: clover(),
+                  ),
+                  CardTemplate(
+                    color: Colors.red,
+                    number: 10,
+                    suit: clover(),
+                  ),
                 ],
               ),
             ],
